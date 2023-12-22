@@ -89,7 +89,7 @@ let countdownCompleted = false;
 function getTrueNumber(num){ return num < 10 ? "0" + num : num; }
 function calculateRemainingTime(){
     const comingYear = new Date().getFullYear() +1;
-    const comingDate = new Date(`Jan 1, ${comingYear} 00:00:00`);
+    const comingDate = new Date(`Dec 21, ${2023} 23:27:30`);
 
     const now = new Date();
     const remainingTime = comingDate.getTime() - now.getTime();
