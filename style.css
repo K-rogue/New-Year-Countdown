@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root{
+    font-family: "Aleo", sans-serif; 
+}
+
+html,
+body{
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: rgba(119,13,13,0.92)64%;
+    background: radial-gradient(circle, rgba(119,13,13,0.92) 60%, 
+    rgba(0,0,0,0.6) 100%);
+}
+canvas{
+    height:100%;
+    width: 100%;
+}
+.label {
+    font-size: 3rem ;
+    background: url("https://res.cloudinary.com/nikita-rudenko/image/upload/v1544906837/stripe_c982eebe592d6c30f2034f5ce80b1fc6.png");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 45s linear infinite;
+    margin-bottom: 2rem;
+  
+}
+@keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 1000% 500%;
+    }
+}
+.middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    user-select: none;
+}
+.time{
+    color: #d99c3b;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+}
+.time span{
+    padding: 0 14px;
+    font-size: 1.5rem;
+}
+.time span div{
+    font-size: 3rem;
+}
+#newYearText {
+    
+    opacity: 0;
+    color: #E3BC9A;
+    transition: opacity 2s ease; /* Adjust the duration and easing as needed */
+}
+
+.fade-in {
+    opacity: 1;
+}
+#quote{
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+
+}
+#newYear{
+    font-size: 2rem;
+    font-family: "Dancing Script";
+    margin: 1.5rem;
+   
+}
